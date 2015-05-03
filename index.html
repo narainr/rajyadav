@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -197,6 +198,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <a class="twitter-timeline" href="https://twitter.com/narainr" data-widget-id="594723267572727808">Tweets by @narainr</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
                     <!-- /.row (nested) -->
                     <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
@@ -286,7 +292,7 @@
 
     // Scrolls to the selected menu item on the page
     $(function() {
-        $('a[href=#]:not([href=#])').click(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
                 var target = $(this.hash);
